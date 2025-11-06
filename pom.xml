@@ -44,7 +44,7 @@
     </dependencies>
 
     <build>
-        <finalName>Bai1</finalName>
+        <finalName>Project_01_SendEmail</finalName>
         <plugins>
             <!-- Compiler Plugin -->
             <plugin>
