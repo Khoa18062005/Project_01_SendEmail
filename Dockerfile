@@ -20,7 +20,7 @@ FROM tomcat:9.0.85-jdk17-corretto
 # Xóa webapp mặc định của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*  # xóa mặc định của tomcat
 
-# Copy file WAR từ giai đoạn build
+# Copy file WAR từ giai đoạn build sang Tomcat
 COPY --from=builder /Project_01_SendEmail/target/Project_01_SendEmail.war /usr/local/tomcat/webapps/ROOT.war
 
 # Mở port 8080 (Render sẽ dùng port này)
